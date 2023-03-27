@@ -8,7 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/productDetail.css">
 
-
+    <!-- link boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -43,8 +44,8 @@
         </div>
     </div>
 
+    <div class="review">
 
-    <div id="product-review" class="review">
 
         <h3>Rating & Review</h3>
         <div class="head-review">
@@ -52,110 +53,164 @@
                 <strong>4.6</strong>
                 <span></span>
                 <p>3 reviews</p>
-
             </div>
             <div class="button-write">
 
-                <a href="#0" class="button-review" trigger-button data-target="data-review">
-                    <button class="button-one">Write a review</button>
+                <a href="#0" class="button-review"> <!--  trigger-button data-target="data-review" -->
+                    <button class="button-one" onclick="viewComment();">Write a review</button>
                 </a>
+            </div>
+            <div class="wrapper-feeling" id="comment-section">
+
+                <h3>Lorem, ipsum dolor.</h3>
+                <form action="#">
+                    <div class="rating-feeling">
+                        <input type="number" name="rating" hidden>
+                        <i class='bx bx-star star' style="--i: 0;"></i>
+                        <i class='bx bx-star star' style="--i: 1;"></i>
+                        <i class='bx bx-star star' style="--i: 2;"></i>
+                        <i class='bx bx-star star' style="--i: 3;"></i>
+                        <i class='bx bx-star star' style="--i: 4;"></i>
+                    </div>
+                    <textarea name="feeling" id="" cols="30" rows="5" placeholder="your comment ..."></textarea>
+                    <div class="btn-group">
+                        <button type="submit" class="btn-fl submit"> Submit</button>
+                        <button class="btn-fl cancel" onclick="coverComment();"> cancel</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="profile">
+            <div class="wrap-details">
+                <img class="image" src="assets/images/avatars/image-amyrobson.png" alt="">
+                <div class="info-detail">
+                    <div class="names">sarah</div>
+                    <div class="rating">
+                        <img src="/assets/images/rating-star/star-regular.svg" alt="">
+                        <img src="/assets/images/rating-star/star-regular.svg" alt="">
+                        <img src="/assets/images/rating-star/star-regular.svg" alt="">
+                        <img src="/assets/images/rating-star/star-regular.svg" alt="">
+                        <img src="/assets/images/rating-star/star-regular.svg" alt="">
+                    </div>
+                    <p>On November 6 2022</p>
+                </div>
+            </div>
+            <div class="controls">
+                <a class="reply" id="button-reply" onclick="viewReply();">
+                    <img src="/assets/images/icon-reply.svg" alt="" class="control-icon">
+                    Reply
+                </a>
+            </div>
+
+            <div class="comment">
+                <strong>Awesome product</strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Quae quaerat nulla placeat consequuntur iste expedita vero
+                    sapiente voluptatem deserunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+                    aut ab mollitia quae, suscipit est, repudiandae non error exercitationem amet cupiditate hic
+                    odit porro tempore, iusto itaque quia similique dolorem?
+                </p>
+                <div class="controls-b">
+                    <a class="delete"><img src="/assets/images/icon-delete.svg" alt="" class="control-icon">Delete</a>
+                    <a class="edit"><img src="/assets/images/icon-edit.svg" alt="" class="control-icon">Edit</a>
+                </div>
+            </div>
+
+            <div id="reply-section" class="comment-box">
+                <div class="user">
+                    <div class="name">
+                        <img src="/assets/images/avatars/image-juliusomo.png" alt="">
+                        <h4>user name ewgwr rwghwr </h4>
+                    </div>
+                    <button id="button-reply" onclick="coverReply();">X</button>
+
+                </div>
+                <div class="comment-form">
+
+                    <form action="" method="post">
+                        <textarea name="comment-reply" id="" cols="30" rows="6" style="resize: both;"
+                            placeholder="you message"></textarea>
+                    </form>
+                    <div class="comment-button">
+                        <button class="coment-submit">Comment</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <div class="wrap-details">
+                    <img class="image" src="assets/images/avatars/image-amyrobson.png" alt="">
+                    <div class="info-detail">
+                        <div class="names">sarah ggg</div>
+
+                        <p>On November 6 2022</p>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <strong>Awesome product</strong>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Quae quaerat nulla placeat consequuntur iste expedita vero
+                        sapiente voluptatem deserunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+                        aut ab mollitia quae, suscipit est, repudiandae non error exercitationem amet cupiditate hic
+                        odit porro tempore, iusto itaque quia similique dolorem?
+                    </p>
+                    <div class="controls-b">
+                        <a class="delete"><img src="/assets/images/icon-delete.svg" alt=""
+                                class="control-icon">Delete</a>
+                        <a class="edit"><img src="/assets/images/icon-edit.svg" alt="" class="control-icon">Edit</a>
+                    </div>
+                </div>
 
             </div>
         </div>
 
         <div class="profile">
-            <div class="thumb-name">
-                <div class="image">
-                    <img src="assets/images/avatars/image-amyrobson.png" alt="">
-                </div>
-
-                <div class="grouping">
-                    <div class="wrap-detail">
-                        <div class="names">sarah</div>
-                        <div class="rating">
-                            <img src="/assets/images/rating-star/star-regular.svg" alt="">
-                            <img src="/assets/images/rating-star/star-regular.svg" alt="">
-                            <img src="/assets/images/rating-star/star-regular.svg" alt="">
-                            <img src="/assets/images/rating-star/star-regular.svg" alt="">
-                            <img src="/assets/images/rating-star/star-regular.svg" alt="">
-                        </div>
-                        <p>On November 6 2022</p>
+            <div class="wrap-details">
+                <img class="image" src="assets/images/avatars/image-amyrobson.png" alt="">
+                <div class="info-detail">
+                    <div class="names">sarah</div>
+                    <div class="rating">
+                        <img src="/assets/images/rating-star/star-regular.svg" alt="">
+                        <img src="/assets/images/rating-star/star-regular.svg" alt="">
+                        <img src="/assets/images/rating-star/star-regular.svg" alt="">
+                        <img src="/assets/images/rating-star/star-regular.svg" alt="">
+                        <img src="/assets/images/rating-star/star-regular.svg" alt="">
                     </div>
-                    <div class="controls">
-                        <a class="reply">
-                            <img src="/assets/images/icon-reply.svg" alt="" class="control-icon">
-                            Reply
-                        </a>
-                    </div>
+                    <p>On November 6 2022</p>
                 </div>
             </div>
+            <div class="controls">
+                <a class="reply" id="button-reply" onclick="viewReply();">
+                    <img src="/assets/images/icon-reply.svg" alt="" class="control-icon">
+                    Reply
+                </a>
+            </div>
+
             <div class="comment">
-                <div class="comment-section">
-                    <strong>Awesome product</strong>
-                    <p class="grey-color">Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Quae quaerat nulla placeat consequuntur iste expedita vero
-                        sapiente voluptatem deserunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
-                        aut ab mollitia quae, suscipit est, repudiandae non error exercitationem amet cupiditate hic
-                        odit porro tempore, iusto itaque quia similique dolorem?
-                    </p>
-                    <div class="controls">
-                        <a class="delete"><img src="/assets/images/icon-delete.svg" alt=""
-                                class="control-icon">Delete</a>
-                        <a class="edit"><img src="/assets/images/icon-edit.svg" alt="" class="control-icon">Edit</a>
-                    </div>
-                </div>
-
-                <div class="comment-reply">
-                    <div class="thumb-name">
-                        <div class="image">
-                            <img src="assets/images/avatars/image-amyrobson.png" alt="">
-                        </div>
-
-
-                        <div class="wrap-detail">
-                            <div class="names">sarah devis dak</div>
-                            <p>On November 6 2022</p>
-                        </div>
-
-
-                    </div>
-                    <strong>reply</strong>
-                    <p class="grey-color">Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Quae quaerat nulla placeat consequuntur iste expedita vero
-                        sapiente voluptatem deserunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
-                        aut ab mollitia quae, suscipit est, repudiandae non error exercitationem amet cupiditate hic
-                        odit porro tempore, iusto itaque quia similique dolorem?
-                    </p>
-                    <div class="controls">
-                        <a class="delete"><img src="/assets/images/icon-delete.svg" alt=""
-                                class="control-icon">Delete</a>
-                        <a class="edit"><img src="/assets/images/icon-edit.svg" alt="" class="control-icon">Edit</a>
-                    </div>
-                </div>
-                <div class="comment-reply">
-                    <strong>reply</strong>
-                    <p class="grey-color">Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Quae quaerat nulla placeat consequuntur iste expedita vero
-                        sapiente voluptatem deserunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
-                        aut ab mollitia quae, suscipit est, repudiandae non error exercitationem amet cupiditate hic
-                        odit porro tempore, iusto itaque quia similique dolorem?
-                    </p>
-                    <div class="controls">
-                        <a class="delete"><img src="/assets/images/icon-delete.svg" alt=""
-                                class="control-icon">Delete</a>
-                        <a class="edit"><img src="/assets/images/icon-edit.svg" alt="" class="control-icon">Edit</a>
-                    </div>
+                <strong>Awesome product</strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Quae quaerat nulla placeat consequuntur iste expedita vero
+                    sapiente voluptatem deserunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+                    aut ab mollitia quae, suscipit est, repudiandae non error exercitationem amet cupiditate hic
+                    odit porro tempore, iusto itaque quia similique dolorem?
+                </p>
+                <div class="controls-b">
+                    <a class="delete"><img src="/assets/images/icon-delete.svg" alt="" class="control-icon">Delete</a>
+                    <a class="edit"><img src="/assets/images/icon-edit.svg" alt="" class="control-icon">Edit</a>
                 </div>
             </div>
+
         </div>
 
-
-        <br>
-
-
-
-
     </div>
+
+
+    <script src="assets/js/coment.js"></script>
 </body>
 
 </html>
