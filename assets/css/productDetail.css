@@ -21,9 +21,6 @@
     width: 100%;
     display: flex;
     align-items: center;
-    
-    
-    
     /* position: relative; */
     opacity: 0;
     transform: translateY(-50px);
@@ -278,7 +275,7 @@
     max-width: 768px;;
     margin: 0 auto;
     min-width: 220px;
-    background: brown;
+    
     display: flex;
     padding: 3px 9px;
     justify-content: flex-start;
@@ -316,15 +313,14 @@
 
 .review .head-review .button-write button{
     color: black;
-    background-color: pink;
-    border-radius: 14px;
+    
     padding: 9px;
-    border: none;
+    border: 1px solid black;
     border-width: 1px;
     text-transform: unset;
     cursor: pointer;
     font-weight: 600;
-    border-radius: 18px;
+    
     font-size: 10px;
 } 
 .review .head-review .button-write .button-one{
@@ -332,7 +328,7 @@
 }
 .review .head-review .button-write .button-one:focus{
     color: white;
-    background: darkblue;
+    background: black;
     box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.2),inset 8px 8px 16px rgba(0, 0, 0, 0.5);
     
 }
@@ -353,7 +349,7 @@
     border-width: 2px;
     border-style: solid;
     min-width: 160px;
-    background: seagreen;
+   
     gap: 10px;
     
 }
@@ -376,10 +372,10 @@
     font-size: 14px;
 }
 .profile .controls{
-    background: chocolate;
+    background: crimson;
     cursor: pointer;
     padding: 6px 12px;
-    border-radius: 20px;
+    
 }
 
 .comment{
@@ -412,15 +408,13 @@
 .comment-box{
     border-radius: 1rem;
     border: 1px solid #292929;
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; */
+    
     margin: 6px auto;
     width: 90%;
     padding: 0px 3px 3px 3px;
     overflow: hidden; 
     display: none;
+    
     
 }
 .comment-box .user{
@@ -440,10 +434,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: blue;
-    border: none;
-    border-radius: 2px;
+    background: #fff;
+    border: 1px solid #292929;
+    cursor: pointer;
 }
+
 .comment-box .user .name{
     display: flex;
     justify-content: center;
@@ -485,12 +480,16 @@
 }
 .comment-box .comment-form textarea{
     width: 100%;
-    
+    border: none;
     border-radius: 5px;
     min-width: 100px;
     /* max-width: 00px; */
     margin: 0 10px;
     padding: 9px;
+
+    outline: none;
+    resize: none;
+    margin-bottom: .5rem;
 }
 .comment-button {
     
@@ -500,12 +499,13 @@
 }
 .comment-button .coment-submit{
     padding: 5px 8px;
-    border-radius: 1rem;
+    
     border: none;
     background: #292929;
     color: #fff;
     cursor: pointer;
 }
+
 /*reply section comment*/
 .reply-comment{
    
@@ -585,7 +585,7 @@
     
     padding: .5rem;
     border-radius: .5rem;
-    border: none;
+    border: 1px solid black;
     outline: none;
     resize: none;
     margin-bottom: .5rem;
@@ -597,8 +597,8 @@
 }
 .wrapper-feeling .btn-group .btn-fl{
     padding: .45rem .5rem;
-    border-radius: .5rem;
-    border: none;
+    margin: 0 6px;
+    border: 1px solid #292929;
     outline: none;
     cursor: pointer;
     font-size: .675rem;
@@ -606,19 +606,22 @@
 }
 
 .wrapper-feeling .btn-group .btn-fl.submit{
-    background: darkblue;
+    background: #292929;
     color: white;
 }
 .wrapper-feeling .btn-group .btn-fl.submit:hover{
-    background: darkmagenta;
+    background: #fff;
+    color: #292929;
 }
 
 .wrapper-feeling .btn-group .btn-fl.cancel{
-    background: darkred;
-    color: white;
+    
+    background: #fff;
+    color: #292929;
 }
 .wrapper-feeling .btn-group .btn-fl.cancel:hover{
-    background: seagreen;
+    background: #292929;
+    color: #fff;
 }
 
 /*modal review*/
