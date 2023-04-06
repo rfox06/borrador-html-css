@@ -371,7 +371,7 @@
 .wrap-details .info-detail p{
     font-size: 14px;
 }
-.profile .controls{
+.profile .reply{
     background: crimson;
     cursor: pointer;
     padding: 6px 12px;
@@ -624,18 +624,48 @@
     color: #fff;
 }
 
-/*modal review*/
-/* .modal-show{
-    opacity: 1;
-    pointer-events: unset;
-    transition: opacity .6s;
-} */
-
-
-
-
-
-
+/*section modal delete comment*/
+.delete-container{
+    width: 60%;
+    padding: 2%;
+    margin: 0 auto;
+    background-color: rgb(236, 212, 234);
+    display: none;
+    border: 1px solid black;
+}
+.delete-actions{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.close {
+    font-size: 30px;
+    color: red;
+    font-weight: bolder;
+    height: 5%;
+    float: right;
+    margin-top: -3%;
+    cursor: pointer;
+}
+.cancel {
+    width: 40%;
+    height: 5vh;
+    background: rebeccapurple;
+    border: none;
+    color: #fff;
+    margin-right: 2%;
+    cursor: pointer;
+}
+.delete-option{
+    width: 40%;
+    height: 5vh;
+    background: darkred;
+    border: none;
+    color: #fff;
+    margin-left: 2%;
+    cursor: pointer;
+}
 
 @media (min-width: 480px){}
 @media (min-width: 570px){}

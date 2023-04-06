@@ -91,7 +91,6 @@
         <div class="profile">
             <div class="profile-dinamic">
 
-
                 <div class="wrap-details">
                     <img class="image" src="assets/images/avatars/image-amyrobson.png" alt="">
                     <div class="info-detail">
@@ -106,8 +105,6 @@
                         <p>On November 6 2022</p>
                     </div>
                 </div>
-
-
 
                 <div class="controls">
                     <a class="reply" id="button-reply" onclick="viewReply();">
@@ -125,10 +122,45 @@
                         odit porro tempore, iusto itaque quia similique dolorem?
                     </p>
                     <div class="controls-b">
-                        <a class="delete"><img src="/assets/images/icon-delete.svg" alt=""
-                                class="control-icon">Delete</a>
+                        <a class="delete"
+                            onclick="document.querySelector('.delete-container').style.display ='block'"><img
+                                src="/assets/images/icon-delete.svg" alt="" class="control-icon">Delete</a>
+
+                        <!--                         
+                        <div class="delete-container">
+                            <span onclick="document.querySelector('.delete-container').style.display= 'none'"
+                                class="close" title="close">&times;</span>
+                            <div class="delete-txt">
+                                <p>Are you sure you comment?</p>
+
+                            </div>
+                            <div class="delete-actions">
+                                <button onclick="document.querySelector('.delete-container').style.display= 'none'"
+                                    class="cancel">Cancel</button>
+                                <button class="delete-option">Delete</button>
+                            </div>
+                        </div> -->
+
+
+
                         <a class="edit"><img src="/assets/images/icon-edit.svg" alt="" class="control-icon">Edit</a>
                     </div>
+
+                    <!--modal delete option-->
+                    <div class="delete-container">
+                        <span onclick="document.querySelector('.delete-container').style.display= 'none'" class="close"
+                            title="close">&times;</span>
+                        <div class="delete-txt">
+                            <p>Are you sure you comment?</p>
+
+                        </div>
+                        <div class="delete-actions">
+                            <button onclick="document.querySelector('.delete-container').style.display= 'none'"
+                                class="cancel">Cancel</button>
+                            <button class="delete-option">Delete</button>
+                        </div>
+                    </div>
+                    <!--modal delete option-->
                 </div>
 
                 <div id="reply-section" class="comment-box">
@@ -199,6 +231,21 @@
 
 
     </div>
+
+    <!-- <div class="delete-modal">
+        <button>delete post</button>
+        <div class="delete-container">
+            <span class="close" title="close">&times;</span>
+            <div class="delete-txt">
+                <p>Are you sure you comment?</p>
+
+            </div>
+            <div class="delete-actions">
+                <button class="cancel">Cancel</button>
+                <button class="delete">Delete</button>
+            </div>
+        </div>
+    </div> -->
 
 
 
